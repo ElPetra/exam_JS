@@ -1,0 +1,472 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUI/SegoeUI.eot");
+  src: local("../fonts/SegoeUI/Segoe UI"), local("SegoeUI"),
+    url("../fonts/SegoeUI/SegoeUI.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SegoeUI/SegoeUI.woff2") format("woff2"),
+    url("../fonts/SegoeUI/SegoeUI.woff") format("woff"),
+    url("../fonts/SegoeUI/SegoeUI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUI/SegoeUI-SemiBold.eot");
+  src: local("../fonts/SegoeUI/Segoe UI Semibold"), local("SegoeUI-SemiBold"),
+    url("../fonts/SegoeUI/SegoeUI-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/SegoeUI/SegoeUI-SemiBold.woff2") format("woff2"),
+    url("../fonts/SegoeUI/SegoeUI-SemiBold.woff") format("woff"),
+    url("../fonts/SegoeUI/SegoeUI-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUI/SegoeUI-Light.eot");
+  src: local("../fonts/SegoeUI/Segoe UI Light"), local("SegoeUI-Light"),
+    url("../fonts/SegoeUI/SegoeUI-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SegoeUI/SegoeUI-Light.woff2") format("woff2"),
+    url("../fonts/SegoeUI/SegoeUI-Light.woff") format("woff"),
+    url("../fonts/SegoeUI/SegoeUI-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUI/SegoeUI-Bold.eot");
+  src: local("../fonts/SegoeUI/Segoe UI Bold"), local("SegoeUI-Bold"),
+    url("../fonts/SegoeUI/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SegoeUI/SegoeUI-Bold.woff2") format("woff2"),
+    url("../fonts/SegoeUI/SegoeUI-Bold.woff") format("woff"),
+    url("../fonts/SegoeUI/SegoeUI-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.eot");
+  src: local("../fonts/Roboto/Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/Roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto/Roboto-Bold.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.eot");
+  src: local("../fonts/Roboto/Roboto"), local("Roboto-Regular"),
+    url("../fonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto/Roboto-Regular.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.eot");
+  src: local("../fonts/Roboto/Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/Roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto/Roboto-Medium.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Black.eot");
+  src: local("../fonts/Roboto/Roboto Black"), local("Roboto-Black"),
+    url("../fonts/Roboto/Roboto-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto/Roboto-Black.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Light.eot");
+  src: local("../fonts/Roboto/Roboto Light"), local("Roboto-Light"),
+    url("../fonts/Roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto/Roboto-Light.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Thin.eot");
+  src: local("../fonts/Roboto/Roboto Thin"), local("Roboto-Thin"),
+    url("../fonts/Roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto/Roboto-Thin.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.yellow-bgr {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  position: absolute;
+  z-index: -2;
+}
+.pink-bgr {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  position: absolute;
+  z-index: -1;
+}
+.tel {
+  max-width: 375px;
+  width: 100%;
+  background-color: #050522;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  border: 1px solid #000;
+  box-shadow: 0px 0px 50px 5px rgba(6, 6, 34, 0.4);
+  max-height: 812px;
+  height: 100vh;
+  min-height: min-content;
+}
+.greeting {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14.55px;
+}
+.greeting__title {
+  color: #ef5858;
+  font-family: "Roboto", sans-serif;
+  text-shadow: -1px 1px 10px rgba(239, 88, 88, 0.15);
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+.greeting__descr {
+  color: #f4f4f4;
+  text-align: center;
+  text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.15);
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 15px;
+  max-width: 273px;
+}
+.btns {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.btn {
+  color: #ffde69;
+  text-align: center;
+  text-shadow: -1px 1px 10px rgba(255, 222, 105, 0.15);
+  font-size: 20px;
+  font-weight: 600;
+  width: 281px;
+  height: 60px;
+  border-radius: 15px;
+  border: 3px solid #ffde69;
+  box-shadow: -1px 1px 10px 0px rgba(255, 222, 105, 0.15);
+  background-color: #050522;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.btn_yellow {
+  background-color: #ffde69;
+  color: #050522;
+}
+.btn_login-modal {
+  border: 3px solid #050522;
+  width: 325px;
+}
+.rights {
+  color: #ffde69;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 36px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.modal__register {
+  position: absolute;
+  width: 100%;
+  height: 568px;
+  top: 30%;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #ffecaa;
+  max-width: 375px;
+  border-radius: 40px 40px 30px 30px;
+  box-shadow: 0px 2px 15px 2px rgba(255, 236, 170, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px 25px 21px;
+  transition: all 0.8s ease 0s;
+  transform: translate(0, 100%);
+}
+.modal__login {
+  position: absolute;
+  width: 100%;
+  height: min-content;
+  top: 46%;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #ffecaa;
+  max-width: 375px;
+  border-radius: 40px 40px 30px 30px;
+  box-shadow: 0px 2px 15px 2px rgba(255, 236, 170, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px 25px 21px;
+  transition: all 0.8s ease 0s;
+  transform: translate(0, 100%);
+}
+.remember {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.check {
+  padding-left: 25px;
+}
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.option {
+  display: flex;
+  align-items: center;
+}
+.checkbox:checked + .check__box {
+  border-color: #ef5858;
+  background-color: #ef5858;
+  background-image: url(../check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.check__box {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #d7d7d7;
+  border-radius: 5px;
+  border: 1px solid #050522;
+  margin-left: -30px;
+  margin-top: 2px;
+}
+.remember__left label {
+  text-align: center;
+  margin-left: 5px;
+}
+.forgot {
+  color: #050522;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.forgot:hover {
+  color: #ef5858;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 36px;
+}
+.hello {
+  color: #050522;
+  font-size: 20px;
+  font-weight: 400;
+}
+.cross {
+  position: absolute;
+  top: 7.5%;
+  right: 25px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+.cross:hover {
+  transform: scale(1.2);
+}
+.reg__title {
+  color: #050522;
+  font-size: 30px;
+  font-weight: 700;
+}
+.rectangle {
+  background-color: #ffecaa;
+  width: min-content;
+  position: absolute;
+  top: 20.5%;
+  left: 10%;
+  padding: 2px 10px;
+}
+.rectangle2 {
+  background-color: #ffecaa;
+  width: min-content;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  padding: 2px 10px;
+}
+.username {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+}
+.info {
+  border-radius: 10px;
+  border: 2px solid #050522;
+  background-color: #ffecaa;
+  width: 325px;
+  height: 60px;
+  padding-left: 20px;
+}
+.info::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+}
+.password {
+  border-radius: 10px;
+  border: 1px solid #050522;
+  background-color: #ffecaa;
+  max-width: 325px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  -webkit-text-security: disc;
+  position: relative;
+}
+.password::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+}
+.password_repeat,
+.passwordLogin {
+  -webkit-text-security: disc;
+}
+.lockBtn {
+  position: absolute;
+  cursor: pointer;
+  top: 53.5%;
+  right: 10%;
+}
+.lockBtn2 {
+  position: absolute;
+  cursor: pointer;
+  top: 68%;
+  right: 10%;
+}
+.lockBtn3 {
+  position: absolute;
+  cursor: pointer;
+  top: 51%;
+  right: 10%;
+}
+.unlock1,
+.unlock2,
+.unlock3 {
+  height: 20px;
+  width: 20px;
+}
+.btn_reg {
+  width: 325px;
+  border: 3px solid #050522;
+}
+.account {
+  color: #050522;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px auto 0;
+}
+.change-form {
+  color: #ef5858;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.change-form:hover{
+  font-weight: 800;
+}
+.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
+}
+.error {
+  color: #ef5858;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+.errorMail {
+  position: absolute;
+  top: 33%;
+}
+.errorCourse {
+  position: absolute;
+  top: 47%;
+}
+.errorPassword {
+  position: absolute;
+  top: 61%;
+}
+.errorSecondPassword {
+  position: absolute;
+  top: 75%;
+}
+.congratulation {
+  color: forestgreen;
+  margin-bottom: 200px;
+  max-width: 320px;
+  text-align: center;
+}
+.salut {
+  max-width: 320px;
+  margin-top: 30px;
+}
+.d-none {
+  display: none;
+}

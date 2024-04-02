@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style/style.css" />
+  </head>
+  <body>
+    <main>
+      <svg class="yellow-bgr" xmlns="http://www.w3.org/2000/svg" width="1600" height="1115" viewBox="0 0 1600 1115" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M156.605 1346.32C28.2368 1196.88 -157.328 1028.96 -113.804 837.06C-69.4784 641.627 184.819 591.93 352.482 482.687C470.371 405.874 594.259 360.071 718.79 294.571C906.259 195.967 1054.63 -19.1662 1265.55 2.43605C1483.18 24.7262 1657.56 212.068 1767.01 401.932C1875.99 590.986 1902.39 819.742 1859.92 1033.52C1820.03 1234.29 1692.34 1402.6 1540.93 1539.94C1402.18 1665.8 1231.5 1757.4 1044.75 1772.96C872.059 1787.36 716.593 1696.82 560.186 1621.69C409.756 1549.43 265.43 1473.01 156.605 1346.32Z" fill="#FFDE69"/>
+</svg>
+      <svg class="pink-bgr"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1594"
+        height="1187"
+        viewBox="0 0 1594 1187"
+        fill="none"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M457.544 1657.67C283.209 1584.44 51.8385 1519.89 6.86825 1336.46C-38.9294 1149.64 158.081 997.861 255.16 832.128C323.419 715.596 410.135 623.113 488.95 513.444C607.599 348.346 642.683 99.9745 833.038 28.0247C1029.46 -46.2162 1259.56 39.8081 1435 155.861C1609.68 271.419 1730.5 456.498 1785.76 658.268C1837.66 847.761 1800.24 1047.05 1729.18 1229.93C1664.05 1397.53 1556.81 1549.41 1403.14 1642.9C1261.06 1729.36 1088.73 1718.33 922.204 1720.93C762.042 1723.44 605.337 1719.75 457.544 1657.67Z"
+          fill="#EF5858"
+        />
+      </svg>
+      <section class="tel">
+        <img src="./src/Illustration Picture.svg" alt="" />
+        <div class="greeting">
+          <h1 class="greeting__title">Welcome</h1>
+          <p class="greeting__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod
+          </p>
+        </div>
+        <div class="btns">
+          <button class="btn btn_yellow">Create Account</button>
+          <button class="btn btn_black btn_login">Login</button>
+        </div>
+        <!--Модульное окно register-->
+        <div class="modal__register">
+          <img class="cross" src="./src/Close.svg" alt="" />
+          <p class="hello">Hello...</p>
+          <h2 class="reg__title">Register</h2>
+          <div class="rectangle">
+            <p class="username">username/email</p>
+          </div>
+          <div class="inputs">
+            <input class="info info_username" placeholder="info@example.com" />
+            <p class="error errorMail d-none">
+              Вы ввели некорректный адрес e-mail
+            </p>
+            <input class="info info_course" placeholder="course" />
+            <p class="error errorCourse d-none">Введите данные</p>
+            <input type="text" class="password" placeholder="password" />
+            <span class="lockBtn">
+              <img class="lock1" src="./src/Lock.svg" alt="" />
+              <img class="unlock1 d-none" src="./src/unlock.svg" alt="" />
+            </span>
+            <p class="error errorPassword d-none">Не менее 8 символов</p>
+            <input
+              class="password password_repeat"
+              placeholder="confirm password"
+            />
+            <span class="lockBtn2">
+              <img class="lock2" src="./src/lock.svg" alt="" />
+              <img class="unlock2 d-none" src="./src/unlock.svg" alt="" />
+            </span>
+            <p class="error errorSecondPassword d-none">Пароли не совпадают</p>
+            <button class="btn btn_reg">"Register"</button>
+          </div>
+          <p class="account">
+            Already have account? <span class="change-form login">Login</span>
+          </p>
+        </div>
+        <!--Модульное окно login-->
+        <div class="modal__login">
+          <img class="cross" src="./src/Close.svg" alt="" />
+          <p class="hello">Welcome Back!!!</p>
+          <h2 class="reg__title">Login</h2>
+          <div class="rectangle2">
+            <p class="username">username/email</p>
+          </div>
+          <div class="inputs">
+            <input
+              class="info info_username usernameLS"
+              placeholder="info@example.com"
+            />
+            <p class="error errorMail d-none">
+              Вы ввели некорректный адрес e-mail
+            </p>
+            <input
+              type="text"
+              class="password password_login loginLS"
+              placeholder="password"
+            />
+            <span class="lockBtn3">
+              <img class="lock3" src="./src/Lock.svg" alt="" />
+              <img class="unlock3 d-none" src="./src/unlock.svg" alt="" />
+            </span>
+            <p class="error errorPassword d-none">Неверный пароль</p>
+            <div class="remember">
+              <div class="remember__left">
+                <label class="check option">
+                  <input type="checkbox" class="checkbox" />Remember me
+                  <span class="check__box"></span>
+                </label>
+              </div>
+              <a href="#" class="forgot">Forgot Password?</a>
+            </div>
+            <button class="btn btn_reg btn_login-modal">"Login"</button>
+          </div>
+          <p class="account">
+            Don’t have an account?<span class="change-form reg"> Register</span>
+          </p>
+        </div>
+        <a class="rights">All Right Reserved @2021</a>
+      </section>
+    </main>
+    <script type="module" src="./script2.js"></script>
+  </body>
+</html>
